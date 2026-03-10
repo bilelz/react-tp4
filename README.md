@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ])
 ```
+
+Déployé sur vercel
