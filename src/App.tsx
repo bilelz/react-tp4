@@ -7,7 +7,6 @@ import { BlogUserList } from "./components/BlogUserList";
 import { BlogUserPostDetail } from "./components/BlogUserPostDetail";
 import { RandomUsers } from "./components/RandomUsers";
 import About from "./pages/About";
-import Home from "./pages/NotFound";
 
 function App() {
   // const [show, setShow] = useState(false);
