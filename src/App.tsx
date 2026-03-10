@@ -5,6 +5,9 @@ import { BlogLayout } from "./layouts/BlogLayout";
 import { BlogUserPostList } from "./components/BlogUserPostList";
 import { BlogUserList } from "./components/BlogUserList";
 import { BlogUserPostDetail } from "./components/BlogUserPostDetail";
+import { RandomUsers } from "./components/RandomUsers";
+import About from "./pages/About";
+import Home from "./pages/NotFound";
 
 function App() {
   // const [show, setShow] = useState(false);
@@ -12,7 +15,7 @@ function App() {
 
   return (
     <>
-      <h1>Séance 5</h1>
+      <h1>React App</h1>
       {/* <Test /> */}
       {/* <Count /> */}
       {/* <DataLoader /> */}
@@ -64,6 +67,9 @@ function App() {
       {/* avec Bloglayout */}
       <Routes>
         <Route path="/" element={<BlogLayout />}>
+        {/* <Route index element={<Home />} /> */}
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<RandomUsers />} />
           <Route index element={<BlogUserList />} />{" "}
           {/* AllPostList  Pattern : Fetch avec Search Params */}
           <Route path="/user/:userId" element={<BlogUserPostList />} />

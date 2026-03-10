@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 export function NavigationLink() {
   return (
     <nav>
-      Menu avec &lt;Navlink&gt; :
       <ul>
         <li>
           {" "}
